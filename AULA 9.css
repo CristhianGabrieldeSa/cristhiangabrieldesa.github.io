@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #1a1a1a;
+}
+/* APARÊNCIA PAGINA INICIAL */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+ }
+
+ .nav-item {
+
+ }
+
+.nav-link {
+    color: white;
+    text-decoration: 0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;   
+}
+
+.nav-link:hover {
+    color: red;
+    font-size: 18px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    .nav-menu {
+        gap: 15px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .nav-link {
+        font-size: 14px;
+    }
+    .nav-link:hover {
+        font-size: 16px;
+    }
+}
+
+/*APARÊNCIA CURRÍCULO*/
+main {
+    height: 600px;
+    background-image: url('./img/fundo.jpg');
+    background-size: 800px;
+}
+.titulo {
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    z-index: 1000;
+    font-size: 200%;
+}
+.titulo-intro {
+    padding-top: 50px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    z-index: 1000;
+    font-size: 300%;
+}
+
+.lista-margem {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.cristhian {
+    color: white;
+    font-family: Oswald, sans-serif;
+    font-size: 200%;
+    text-decoration:underline;
+    background-color: #030816f8;
+}
+.subtitulos {
+    color: white;
+    font-family: Oswald, sans-serif;
+    font-size: 120%;
+    text-decoration:underline;
+    background-color: #030816f8;
+
+}
+.info-pessoal {
+color: white;
+font-family: "Roboto Slab", serif;
+font-style: normal;
+background-color: #030816f8;
+}
+
+/* RESPOSIVIDADE */
+@media(max-width: 768px) {
+    .main {
+        padding: 15px 20px;
+    }
+    .titulo {
+        font-size: 20px;
+    }
+    .info-pessoal {
+        font-size: 14px;
+    }
+
+}
+
+/* RODAPÉ */
+footer ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 2px;
+    padding-left: 10px;
+    list-style: none;
+    background-color: #1a1a1a;
+}
+footer ul li a{
+text-decoration: none;
+color: white;
+padding-left: 15px;
+font-family: "Roboto Slab", serif;
+font-style: normal;
+}
+
+/*CONTATO*/
+
+.formulario {
+text-decoration: none;
+color: white;
+padding: 15px;
+padding-top: 20px;
+font-family: "Roboto Slab", serif;
+font-style: normal;
+}
+
+.mensagem {
+text-decoration: none;
+color: white;
+padding: 15px;
+padding-top: 20px;
+font-family: "Roboto Slab", serif;
+font-style: normal;
+}
+
+.sobre {
+padding-top: 20px;
+padding: 15px;
+}
+.sobre-texto {
+text-decoration: none;
+color: white;
+padding: 11px;
+padding-top: 20px;
+font-family: "Roboto Slab", serif;
+font-style: normal;
+background-color: #030816f8;
+}
+h3 {
+    background-color: #030816f8;
+}
+.caixinha {
+    background-color: #030816f8;
+    color: white;
+}
