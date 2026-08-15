@@ -29,10 +29,12 @@
 
 <h2 class="title">Contato</h2>
 
-<form class="contact-form">
-<input type="text" placeholder="Seu nome">
-<input type="email" placeholder="Seu e-mail">
-<textarea rows="6" placeholder="Digite sua mensagem"></textarea>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+
+<input type="text" name="name" placeholder="Seu nome" required>
+<input type="email" name="email" placeholder="Seu e-mail" required>
+<textarea rows="6" name="message" placeholder="Digite sua mensagem" required></textarea>
 <button type="submit">Enviar mensagem</button>
 </form>
 
