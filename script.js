@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e) {
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
-  result.innerHTML = "Por favor aguarde..."
+  result.innerHTML = "<br>Por favor aguarde..."
 
     fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                result.innerHTML = json.message;
+                result.innerHTML = "<br>Mensagem enviada com sucesso!";
             } else {
                 console.log(response);
                 result.innerHTML = json.message;
@@ -27,7 +27,7 @@ form.addEventListener('submit', function(e) {
         })
         .catch(error => {
             console.log(error);
-            result.innerHTML = "Algo deu errado!";
+            result.innerHTML = "<br>Algo deu errado!";
         })
         .then(function() {
             form.reset();
