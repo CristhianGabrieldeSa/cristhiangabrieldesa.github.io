@@ -157,11 +157,6 @@ input, textarea{
     color:white;
 }
 
-input:focus,
-textarea:focus {
-    border-color: #28c7ff;
-}
-
 button{
     padding:1rem;
     border:none;
