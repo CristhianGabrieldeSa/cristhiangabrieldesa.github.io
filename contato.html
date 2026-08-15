@@ -1,50 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contato</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-<div class="container navbar">
-<a href="index.html" class="logo">Cristhian <span>Sá</span></a>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Cristhian <span>Sá</span></a>
 
-<ul class="nav-menu">
-<li><a class="nav-link" href="index.html">Início</a></li>
-<li><a class="nav-link" href="curriculo.html">Currículo</a></li>
-<li><a class="nav-link" href="portfolio.html">Portfólio</a></li>
-<li><a class="nav-link" href="contato.html">Contato</a></li>
-<li><a class="nav-link" href="sobre.html">Sobre</a></li>
-</ul>
-</div>
-</header>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="index.html">Início</a></li>
+                <li><a class="nav-link" href="curriculo.html">Currículo</a></li>
+                <li><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+                <li><a class="nav-link" href="contato.html">Contato</a></li>
+                <li><a class="nav-link" href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
 
-<section class="section">
-<div class="container">
-<div class="card">
+    <section class="section">
+        <div class="container">
+            <div class="card">
 
-<h2 class="title">Contato</h2>
+                <h2 class="title">Contato</h2>
 
-<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-<input type="hidden" name="access_key" value="bb88b40e-b8f1-4dd3-b011-5eb3731acac2">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="form">
+                    
+                    <input type="hidden" name="subject" value="Novo contato pelo seu Website">
+                    
+                    <input type="checkbox" name="botcheck" id="" style="display: none;">
+                    
+                    <input type="hidden" name="access_key" value="bb88b40e-b8f1-4dd3-b011-5eb3731acac2">
 
-<input type="text" name="name" placeholder="Seu nome" required>
-<input type="email" name="email" placeholder="Seu e-mail" required>
-<textarea rows="6" name="message" placeholder="Digite sua mensagem" required></textarea>
-<button type="submit">Enviar mensagem</button>
-</form>
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    
+                    <textarea rows="6" name="message" placeholder="Digite sua mensagem" required></textarea>
+                    
+                    <button type="submit">Enviar mensagem</button>
 
-</div>
-</div>
-</section>
+                    <div id="result"></div>
+                </form>
 
-<footer>
-<p>© 2026 Cristhian Gabriel de Sá</p>
-</footer>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <p>© 2026 Cristhian Gabriel de Sá</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
